@@ -1,0 +1,133 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a; 
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  color: #2ecc71; 
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p, li {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: #dddddd; 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li::before {
+  content: '➤'; 
+  color: #2ecc71;
+  margin-right: 10px;
+}
+
+button, .explore-btn, .about-btn {
+  background-color: #1f1f1f;
+  color: #2ecc71;
+  border: 2px solid #2ecc71;
+  padding: 12px 24px;
+  margin: 20px;
+  font-size: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+button:hover, .explore-btn:hover, .about-btn:hover {
+  background-color: #2ecc71;
+  color: #1a1a1a;
+  border-color: #27ae60; 
+}
+
+button:active, .explore-btn:active, .about-btn:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+
+.home-header, .about-header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #2c3e50; 
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.home-content, .about-content {
+  padding: 25px;
+  margin: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.home-details, .about-goal {
+  padding: 20px;
+  margin: 20px;
+  background-color: #272727; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #2ecc71;
+  border-radius: 10px;
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05); 
+}
+
+a {
+  color: #2ecc71;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #27ae60;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #2ecc71;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid #2ecc71;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-header, .about-header {
+    padding: 30px 10px;
+  }
+
+  .home-content, .about-content, .home-details, .about-goal {
+    margin: 10px;
+  }
+
+  button, .explore-btn, .about-btn {
+    font-size: 1em;
+    padding: 10px 18px;
+  }
+}
